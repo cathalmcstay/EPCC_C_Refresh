@@ -75,6 +75,14 @@ int count_links_from_page(int matrix[SIZE][SIZE], int page)
         }
 }
 
+void normalise_ranks(double ranks[SIZE])
+{
+        for (int i = 0; i < SIZE; i++)
+        {
+                ranks[i] = ranks[i] * DUMP_FACTOR + (1.0 - DUMP_FACTOR) / SIZE;
+        }
+}
+
 /**
  * @brief This function contains the architecture of a pagerank application.
  * @details You have to declare and define the variables and functions used
