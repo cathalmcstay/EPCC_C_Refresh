@@ -256,7 +256,7 @@ int main(int argc, char* argv[])
         normalise_ranks(ranks);
         printf("After normalisation\n");
         print_ranks(ranks);
-        print("------------------------\n");
+        printf("------------------------\n");
         /**
          * @brief Calculate the sum of all ranks and prints the value obtained.
          **/
