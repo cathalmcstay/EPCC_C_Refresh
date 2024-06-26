@@ -13,7 +13,7 @@
 
 #define SIZE 5
 #define DUMP_FACTOR 0.85
-#define MAX_ITERATION 10
+#define MAX_ITERATION 100
 
 void initialise_adjacency_matrix(int matrix[SIZE][SIZE])
 {
@@ -51,12 +51,12 @@ void print_2D_array(int matrix[SIZE][SIZE])
 
 void print_ranks(double ranks[SIZE])
 {
+        printf("-----------Ranks-----------\n");
         for (int i = 0; i < SIZE; i++)
         {
-                printf("-----------Ranks-----------\n");
                 printf("Page %d: %f\n", i, ranks[i]);
-                printf("---------------------------\n");
         }
+        printf("---------------------------\n");
 }
 
 int count_links_from_page(int matrix[SIZE][SIZE], int page)
