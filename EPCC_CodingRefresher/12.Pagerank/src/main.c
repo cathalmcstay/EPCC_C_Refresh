@@ -64,18 +64,13 @@ int count_links_from_page(int matrix[SIZE][SIZE], int page)
         int count = 0;
         for (int i = 0; i < SIZE; i++)
         {
-                for (int j = 0; j < SIZE; j++)
+                if (matrix[page][i] == 1)
                 {
-                        if (matrix[i][j] == 1)
-                        /**
-                         * print the value at index [a][b] of the adjacency_matrix
-                         */
-                        {    
-                                count++;
-                        }
+                        count++;
                 }
-                return count;
         }
+        return count;
+
 }
 
 void normalise_ranks(double ranks[SIZE])
