@@ -61,9 +61,9 @@ void print_ranks(double ranks[SIZE])
 
 int count_links_from_page(int matrix[SIZE][SIZE], int page)
 {
+        int count = 0;
         for (int i = 0; i < SIZE; i++)
         {
-                int count = 0;
                 for (int j = 0; j < SIZE; j++)
                 {
                         if (matrix[i][j] == 1)
