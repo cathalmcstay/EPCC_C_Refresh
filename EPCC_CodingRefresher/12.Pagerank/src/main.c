@@ -231,15 +231,7 @@ int main(int argc, char* argv[])
                  * connectivity matrix, and the source webpage considered. It
                  * returns the number of links obtained.
                  */
-                
-
-                /** 
-                 * print the value at index [a][b] of the adjacency_matrix
-                */
-                printf("Adjacency matrix[%d][%d] = %d\n", i, j, adjacency_matrix[i][j]);
                 int link_count = count_links_from_page(adjacency_matrix, i);
-                printf("Page %d has %d links\n", i, link_count);
-
                 /**
                  * @brief If the number of links is strictly greater than 0,
                  * add (1 / link_count)th of the source webpage's previous rank
