@@ -230,6 +230,7 @@ int main(int argc, char* argv[])
                  * returns the number of links obtained.
                  */
                 int link_count = count_links_from_page(adjacency_matrix, i);
+                printf("Page %d has %d links\n", i, link_count);
                 /**
                  * @brief If the number of links is strictly greater than 0,
                  * add (1 / link_count)th of the source webpage's previous rank
