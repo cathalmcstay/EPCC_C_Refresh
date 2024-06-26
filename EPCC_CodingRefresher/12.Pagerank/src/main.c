@@ -70,10 +70,8 @@ int count_links_from_page(int matrix[SIZE][SIZE], int page)
                         /**
                          * print the value at index [a][b] of the adjacency_matrix
                          */
-                        {       printf("Counting\n");
-                                printf("Adjacency matrix[%d][%d] = %d\n", i, j, matrix[i][j]);
+                        {    
                                 count++;
-                                printf("Counted\n");
                         }
                 }
                 return count;
@@ -257,9 +255,6 @@ int main(int argc, char* argv[])
          * new_value = current_value x DUMP_FACTOR + (1.0 - DUMP_FACTOR) / SIZE.         * 
          **/
         normalise_ranks(ranks);
-        printf("After normalisation\n");
-        print_ranks(ranks);
-        printf("------------------------\n");
         /**
          * @brief Calculate the sum of all ranks and prints the value obtained.
          **/
