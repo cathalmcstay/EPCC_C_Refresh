@@ -236,7 +236,7 @@ int main(int argc, char* argv[])
                  */
                 if (link_count > 0)
                 {
-                        ranks[j] += prev_ranks[i] / (double)link_count;
+                        ranks[i] += prev_ranks[i] / (double)link_count;
                 }
             }
                 //////////////////////
