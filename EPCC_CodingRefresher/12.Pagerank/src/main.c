@@ -70,10 +70,10 @@ int count_links_from_page(int matrix[SIZE][SIZE], int page)
                         /**
                          * print the value at index [a][b] of the adjacency_matrix
                          */
-                        {
+                        {       printf("Counting\n");
                                 printf("Adjacency matrix[%d][%d] = %d\n", i, j, matrix[i][j]);
                                 count++;
-                                printf("Counted");
+                                printf("Counted\n");
                         }
                 }
                 return count;
