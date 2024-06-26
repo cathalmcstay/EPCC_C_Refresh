@@ -227,6 +227,7 @@ int main(int argc, char* argv[])
                  * returns the number of links obtained.
                  */
                 int link_count = count_links_from_page(adjacency_matrix, i);
+                printf("Page %d has %d links\n", i, link_count);
 
                 /**
                  * @brief If the number of links is strictly greater than 0,
@@ -253,7 +254,9 @@ int main(int argc, char* argv[])
          * new_value = current_value x DUMP_FACTOR + (1.0 - DUMP_FACTOR) / SIZE.         * 
          **/
         normalise_ranks(ranks);
-
+        printf("After normalisation\n");
+        print_ranks(ranks);
+        print("------------------------\n");
         /**
          * @brief Calculate the sum of all ranks and prints the value obtained.
          **/
