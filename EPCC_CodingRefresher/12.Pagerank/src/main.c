@@ -250,7 +250,12 @@ int main(int argc, char* argv[])
          * updates the value of every element to:
          * new_value = current_value x DUMP_FACTOR + (1.0 - DUMP_FACTOR) / SIZE.         * 
          **/
+        printf("--------------------------\nUnnormalised ranks\n--------------------------\n");
+        print_ranks(ranks);
+        printf("--------------------------\nNormalised ranks\n--------------------------\n");
         normalise_ranks(ranks);
+        print_ranks(ranks);
+        printf("--------------------------\n");
         /**
          * @brief Calculate the sum of all ranks and prints the value obtained.
          **/
@@ -263,9 +268,8 @@ int main(int argc, char* argv[])
         
         /**
          * @brief Print all ranks.
-         **/
-        print_ranks(ranks);
-
+         * print_ranks(ranks);
+        **/
         //////////////////////
         // END: MAIN LOOP   //
         //////////////////////
